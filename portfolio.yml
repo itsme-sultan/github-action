@@ -1,0 +1,36 @@
+name: portfolio
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      #give access to your portfolio code via pre-built action
+      - name: checkout codes
+        uses: actions/checkout@v4 
+
+      #setup github pages, it will host your directory into web page
+      - name: stup github pages
+        uses: actions/configurs-pages@v4
+
+      #upload artifact
+      #An artifact = a box of files your workflow saves and hands over to the next step.
+      #You build your website files (HTML, CSS, JS), actions/upload-pages-artifact takes those files and packages them into an artifact, 
+      #Later, actions/deploy-pages downloads that artifact and publishes it to GitHub Pages.
+      - name: upload static file
+        uses: actions/upload-pages-artifact@v4
+
+      - name: deploy to github pages
+        usees: actions/deploy-pages@v4

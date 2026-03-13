@@ -1,3 +1,150 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Sultan Ansari | DevOps Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #0f2027;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; margin: 0; }
+    header p { font-size: 1.2rem; margin: 10px 0; }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #00c6ff;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #0072ff; }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 { text-align: center; margin-bottom: 40px; }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .timeline {
+      border-left: 2px solid #00c6ff;
+      padding-left: 20px;
+    }
+    .timeline div { margin-bottom: 20px; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+    }
+    footer a {
+      color: #00c6ff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
 
-<h2>Adding a new line</h2>
+  <!-- Hero Section -->
+  <header>
+    <h1>Mohammad Sultan Ansari</h1>
+    <p>Aspiring DevOps Engineer | Linux • Docker • AWS • CI/CD</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Mohammad, a DevOps learner focused on mastering Linux, Docker, AWS, and CI/CD pipelines. 
+       I enjoy solving real-world infrastructure challenges and documenting my journey.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">Linux</div>
+      <div class="card">Docker</div>
+      <div class="card">AWS EC2</div>
+      <div class="card">Nginx</div>
+      <div class="card">GitHub Actions</div>
+      <div class="card">CI/CD Pipelines</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Python App on AWS EC2</h3>
+        <p>Containerized and deployed using Docker.</p>
+        <a href="https://github.com/itsme-sultan" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>GitHub Actions CI/CD</h3>
+        <p>Automated workflows with YAML pipelines.</p>
+        <a href="https://github.com/itsme-sultan/github-action" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Nginx Setup in VirtualBox</h3>
+        <p>Configured networking and port forwarding.</p>
+        <a href="https://github.com/itsme-sultan" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline">
+    <h2>My DevOps Journey</h2>
+    <div class="timeline">
+      <div><strong>Phase 1:</strong> Linux & Networking</div>
+      <div><strong>Phase 2:</strong> Docker & Containers</div>
+      <div><strong>Phase 3:</strong> AWS EC2 Deployments</div>
+      <div><strong>Phase 4:</strong> CI/CD Pipelines (in progress)</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/itsme-sultan" target="_blank">itsme-sultan</a></p>
+    <p>LinkedIn: <a href="#" target="_blank">Add LinkedIn Here</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Mohammad Sultan Ansari</p>
+    <a href="#about">About</a> | <a href="#skills">Skills</a> | <a href="#projects">Projects</a> | <a href="#contact">Contact</a>
+  </footer>
+
+</body>
+</html>
+

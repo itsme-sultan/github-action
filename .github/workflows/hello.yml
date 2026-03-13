@@ -22,7 +22,7 @@ jobs:
          run: echo "Hello $USER"
       
 
-  details:
+   details:
     runs-on: ubuntu-latest
     steps:
       - name: version of python & docker

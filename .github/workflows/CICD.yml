@@ -12,7 +12,7 @@ jobs:
       - name: pull the code
         run: echo "code clone from github  successful"
   build:
-  needs: code
+    needs: code
     runs-on: ubuntu-latest
     steps:
       - name: build the code

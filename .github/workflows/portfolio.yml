@@ -31,6 +31,8 @@ jobs:
       #Later, actions/deploy-pages downloads that artifact and publishes it to GitHub Pages.
       - name: upload static file
         uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
 
       - name: deploy to github pages
-        usees: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4

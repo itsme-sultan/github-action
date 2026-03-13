@@ -23,7 +23,7 @@ jobs:
 
       #setup github pages, it will host your directory into web page
       - name: stup github pages
-        uses: actions/configurs-pages@v4
+        uses: actions/configure-pages@v4
 
       #upload artifact
       #An artifact = a box of files your workflow saves and hands over to the next step.

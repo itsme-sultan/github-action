@@ -1,0 +1,28 @@
+name: cicd
+
+on:
+  wprkflow_dispatch:
+
+Jobs:
+
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pull the code
+        run: echo "code clone from github  successful"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build the code
+        run: echo "code build successfully"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test the code
+        run: echo "code test successful"
+          
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy the code
+        run: echo "code deployement successful"

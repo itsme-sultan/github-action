@@ -1,5 +1,6 @@
 name: cicd
 
+#it will only run, when we trigger it manually
 on:
   workflow_dispatch:
 

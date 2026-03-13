@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'index.html'
+      - '**.html'
 
 permissions:
   pages: write

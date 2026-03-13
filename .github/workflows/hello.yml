@@ -4,6 +4,9 @@ name: Hello
 on:
   push:
     branches: [main]
+    #this workflow will only run if there is any chnages in .html file
+    paths:
+      - '**.html'
 
 #there are jobs inside workflow
 jobs:

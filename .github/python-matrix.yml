@@ -1,0 +1,23 @@
+name: python lint
+on:
+  push: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout the code
+        uses: action/check0ut@v4
+
+      - name: setup python
+        uses: action/setup-python@v5
+        with:
+        python-version: "3.13"
+
+      - name: install dependencies
+        run: pip install -r requirements.txt
+
+        #to run any python linter we haave to follow the syntaxt flake8 file.py
+      - name: run linter
+        run: flake8 app.py
